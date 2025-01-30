@@ -45,16 +45,16 @@
         "command": "renameFile",
         "when": "filesExplorerFocus && !inputFocus"
     },
-    {
-        "key": "shift+n",
-        "command": "explorer.newFolder",
-        "when": "explorerViewletFocus"
-    },
-    {
-        "key": "shift+n",
-        "command": "workbench.action.newWindow",
-        "when": "!explorerViewletFocus"
-    },
+    // {
+    //     "key": "shift+n",
+    //     "command": "explorer.newFolder",
+    //     "when": "explorerViewletFocus"
+    // },
+    // {
+    //     "key": "shift+n",
+    //     "command": "workbench.action.newWindow",
+    //     "when": "!explorerViewletFocus"
+    // },
     {
         "key": "d",
         "command": "deleteFile",
@@ -68,5 +68,19 @@
     {
         "key": "ctrl+z",
         "command": "workbench.action.toggleZenMode"
+    },
+    {
+        "key": "ctrl+shift+9",
+        "command": "vscode.open",
+        "args": "file:///home/builder/.config/Code/User/settings.json",   
+    },
+    {
+        "key": "ctrl+shift+0",
+        "command": "vscode.open",
+        "args": "file:///home/builder/.config/Code/User/keybindings.json",
+    },
+    {
+        "key": "ctrl+s",
+        "command": "workbench.action.files.saveFiles"
     }
 ]

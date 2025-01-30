@@ -22,13 +22,13 @@
     "C_Cpp.default.cppStandard": "c++23",
     "C_Cpp.default.cStandard": "c23",
     "C_Cpp.default.intelliSenseMode": "gcc-x64",
-    "breadcrumbs.enabled": false,
 
     // Vim Settings
     "editor.lineNumbers": "relative",
 
     "vim.leader": "<Space>",
     "vim.hlsearch": true,
+    "vim.enableNeovim": false,
     "vim.normalModeKeyBindingsNonRecursive": [
         /// Navigation
             // Switch between buffers
@@ -58,7 +58,7 @@
             },
 
             // Nice to have
-            { "before": ["leader", "w"], "commands": [":w!"] },
+            { "before": ["leader", "w"], "commands": [":wa!"] },
             { "before": ["leader", "q"], "commands": [":q!"] },
             { "before": ["leader", "x"], "commands": [":x!"] },
             {
@@ -83,11 +83,36 @@
     "vim.visualModeKeyBindings": [
         // Stay in visual mode while identing
         { "before": ["<"], "commands": ["editor.action.outdentLines"] },
-        { "before": [">"], "commands": ["editor.action.identLines"] },
+        { "before": [">"], "commands": ["editor.action.indentLines"] },
         // Move selected lines while staying in visual mode
         { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
         { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
         // Toggle comment selection
         { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] }
     ],
+    "vim.otherModesKeyBindings": [
+        {
+            "before": [
+                "u"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "undo"
+                }
+            ]
+        },
+        {
+            "before": [
+                "<C-r>"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "redo"
+                }
+            ]
+        }
+    ], 
+    "sqlite.sqlite3": "/usr/bin/sqlite3",
 }
