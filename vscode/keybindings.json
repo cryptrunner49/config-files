@@ -55,6 +55,17 @@
         "command": "filesExplorer.paste",
         "when": "filesExplorerFocus && !inputFocus"
     },
+    {
+        "key": "shift+d",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "filesExplorer.copy",
+                "filesExplorer.paste"
+            ]
+        },
+        "when": "filesExplorerFocus && !inputFocus"
+    },
     // {
     //     "key": "shift+n",
     //     "command": "explorer.newFolder",
