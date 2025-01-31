@@ -45,6 +45,16 @@
         "command": "renameFile",
         "when": "filesExplorerFocus && !inputFocus"
     },
+    {
+        "key": "c",
+        "command": "filesExplorer.copy",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "p",
+        "command": "filesExplorer.paste",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
     // {
     //     "key": "shift+n",
     //     "command": "explorer.newFolder",

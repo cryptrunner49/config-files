@@ -29,6 +29,7 @@
     "vim.leader": "<Space>",
     "vim.hlsearch": true,
     "vim.enableNeovim": false,
+    "vim.useSystemClipboard": true,
     "vim.normalModeKeyBindingsNonRecursive": [
         /// Navigation
             // Switch between buffers
@@ -115,4 +116,5 @@
         }
     ], 
     "sqlite.sqlite3": "/usr/bin/sqlite3",
+    "workbench.activityBar.location": "hidden",
 }
