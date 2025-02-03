@@ -66,11 +66,11 @@
         },
         "when": "filesExplorerFocus && !inputFocus"
     },
-    // {
-    //     "key": "shift+n",
-    //     "command": "explorer.newFolder",
-    //     "when": "explorerViewletFocus"
-    // },
+    {
+         "key": "shift+n",
+         "command": "explorer.newFolder",
+         "when": "explorerViewletFocus"
+    },
     // {
     //     "key": "shift+n",
     //     "command": "workbench.action.newWindow",
@@ -86,10 +86,10 @@
         "key": "ctrl+shift+5",
         "command": "editor.emmet.action.matchTag"
     },
-    {
-        "key": "ctrl+z",
-        "command": "workbench.action.toggleZenMode"
-    },
+    //{
+    //    "key": "ctrl+z",
+    //    "command": "workbench.action.toggleZenMode"
+    //},
     {
         "key": "ctrl+shift+9",
         "command": "vscode.open",
@@ -99,9 +99,29 @@
         "key": "ctrl+shift+0",
         "command": "vscode.open",
         "args": "file:///home/builder/.config/Code/User/keybindings.json",
+    }, 
+    {
+        "key": "ctrl+k",
+        "command": "markdown.showPreviewToSide",
+        "when": "!notebookEditorFocused && editorLangId == 'markdown'"
     },
+    {
+        "key": "ctrl+k v",
+        "command": "-markdown.showPreviewToSide",
+        "when": "!notebookEditorFocused && editorLangId == 'markdown'"
+    },
+
+    // Files
     {
         "key": "ctrl+s",
         "command": "workbench.action.files.saveFiles"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "workbench.action.files.newUntitledFile"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "workbench.action.closeActiveEditor"
     }
 ]

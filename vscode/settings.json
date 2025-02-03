@@ -31,6 +31,28 @@
     "vim.enableNeovim": false,
     "vim.useSystemClipboard": true,
     "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "u"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "undo"
+                }
+            ]
+        },
+        {
+            "before": [
+                "<C-r>"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "redo"
+                }
+            ]
+        },
         /// Navigation
             // Switch between buffers
             { "before": ["<S-h>"], "commands": [":bprevious"] },
@@ -79,7 +101,7 @@
             {
                 "before": ["g", "h"],
                 "commands": ["editor.action.showDefinitionPreviewHover"]
-            }
+            }, 
     ],
     "vim.visualModeKeyBindings": [
         // Stay in visual mode while identing
